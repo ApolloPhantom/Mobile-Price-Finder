@@ -2,5 +2,5 @@ requests
 flask
 numpy
 pandas
-sklearn
+scikit-learn
 joblib
