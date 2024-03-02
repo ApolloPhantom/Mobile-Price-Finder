@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>
+        {% if result >3 or result <0 %}
+        WARNING!!
+        {% endif%}
+    </title>
+</head>
+<body>
+    <h1>
+        {% if result >3 or result <0 %}
+              WARNING
+        {% endif%}
+    </h1>
+    <p>
+        {% if result == 0 %}
+        Your Phone range is between $100 - $200
+        {% elif result == 1 %}
+        Your Phone range is between $200 - $400
+        {% elif result == 2 %}
+        Your Phone range is between $400 - $600
+        {% elif result == 3 %}
+        Your Phone range is between $600 - $1000
+        {% else %}
+        You are in uncharted territory.
+        {% endif %}
+    </p>
+    {% if result >3 or result <0 %}
+    <img src="/static/stop-stop-it.gif"> 
+    {% endif%}
+</body>
+</html>

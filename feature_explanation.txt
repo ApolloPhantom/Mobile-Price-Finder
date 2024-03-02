@@ -1,0 +1,56 @@
+Battery_power: This feature represents the total energy a battery 
+can store in milliampere-hours (mAh). It is measured in integer values.
+
+Blue: This feature indicates whether the device has
+Bluetooth capability or not. It's a binary feature where 1 typically 
+means the device has Bluetooth, and 0 means it does not.
+
+Clock_speed: This feature denotes the speed of the microprocessor 
+in gigahertz (GHz). It's a float value representing the frequency of the CPU.
+
+Dual_sim: This feature indicates whether the device supports 
+dual SIM cards or not. Similar to the "blue" feature, it's binary, 
+where 1 typically means the device supports dual SIM, and 0 means it doesn't.
+
+Fc: This feature stands for "Front Camera" and represents 
+the megapixels of the front camera of the mobile device. It's an integer value.
+
+Four_g: Indicates whether the device supports 4G connectivity or not. It's also a binary feature.
+
+int_memory: This feature represents the internal memory (RAM) of the device in gigabytes (GB). It's an integer value.
+
+M_dep: Denotes the Mobile Depth, which refers to the thickness of the device. It's measured in float values.
+
+Mobile_wt: Represents the weight of the mobile device in grams. It's an integer value.
+
+N_cores: Indicates the number of cores in the device's processor. It's typically an integer value.
+
+Pc: Stands for "Primary Camera" and represents the megapixels of the primary/back camera of the mobile device. It's an integer value.
+
+Px_height: Represents the height of the device's display in pixels. It's an integer value.
+
+Px_width: Represents the width of the device's display in pixels. It's an integer value.
+
+Ram: Denotes the Random Access Memory (RAM) of the device in megabytes (MB). It's an integer value.
+
+Sc_h: Stands for "Screen Height" and represents the height of the device's screen in centimeters. It's an integer value.
+
+Sc_w: Stands for "Screen Width" and represents the width of the device's screen in centimeters. It's an integer value.
+
+Talk_time: Represents the longest time that 
+a single battery charge will last when you are using the phone for conversation. It's typically measured in hours.
+
+Three_g: Indicates whether the device supports 3G connectivity or not. It's a binary feature.
+
+Touch_screen: Indicates whether the device has a touch screen or not. It's a binary feature.
+
+Wifi: Indicates whether the device supports Wi-Fi connectivity or not. It's a binary feature.
+
+Price_range: This is the target variable. It represents the price
+range of the mobile device. It's typically divided into categories 
+(e.g., 0 for low cost, 1 for mid-range, 2 for high-end, etc.). In this dataset, 
+it's an integer value representing different price ranges.
+Price Range 0: $100 - $200
+Price Range 1: $200 - $400
+Price Range 2: $400 - $600
+Price Range 3: $600 - $1000
