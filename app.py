@@ -91,15 +91,11 @@ def submitter():
         input_data = np.array(single_row_values).reshape(1, -1)
         k = model.predict(input_data)
         k = int(k)
-        print(k)
-        global result
-        result = k
-        print(result)
-        return render_template("result.html",result=result)
+        return render_template("result.html",result=k)
 
 @app.route("/res")
 def res():
-    return render_template("result.html",result=result)
+    return render_template("result.html",result=-1)
 
         
       
