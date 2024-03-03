@@ -17,8 +17,5 @@
       "runtime": "python3.8",
       "memory": 1024
     }
-  },
-  "dependencies": {
-    "@vercel/python": "^1.3.0"
   }
 }
