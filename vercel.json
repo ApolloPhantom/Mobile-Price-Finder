@@ -1,14 +1,13 @@
 {
-    "devCommand": "gunicorn --bind 0.0.0.0:5000 deploy:app",
     "builds": [
       {
-        "src": "app.py",
+        "src": "*.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "(.*)",
         "dest": "app.py"
       }
     ]
