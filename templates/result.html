@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-        {% if result >3 or result <0 %}
+        {% if result > 3 or result < 0 %}
         WARNING!!
-        {% endif%}
+        {% endif %}
     </title>
 </head>
 <body>
-    <h1>
-        {% if result >3 or result <0 %}
-              WARNING
-        {% endif%}
-    </h1>
-    <p>
-        {% if result == 0 %}
-        Your Phone range is between $100 - $200
-        {% elif result == 1 %}
-        Your Phone range is between $200 - $400
-        {% elif result == 2 %}
-        Your Phone range is between $400 - $600
-        {% elif result == 3 %}
-        Your Phone range is between $600 - $1000
-        {% else %}
-        You are in uncharted territory.
-        {% endif %}
-    </p>
-    {% if result >3 or result <0 %}
-    <img src="/static/stop-stop-it.gif"> 
-    {% endif%}
-    <footer>
-        The prices reflect the phone market in the year 2018.
-    </footer>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1>
+                {% if result > 3 or result < 0 %}
+                <span class="text-danger"><i class="fas fa-exclamation-triangle"></i> WARNING</span>
+                {% else %}
+                Mobile Price Range
+                {% endif %}
+            </h1>
+            <p class="lead">
+                {% if result == 0 %}
+                Your Phone range is between $100 - $200
+                {% elif result == 1 %}
+                Your Phone range is between $200 - $400
+                {% elif result == 2 %}
+                Your Phone range is between $400 - $600
+                {% elif result == 3 %}
+                Your Phone range is between $600 - $1000
+                {% else %}
+                You are in uncharted territory.
+                {% endif %}
+            </p>
+            {% if result > 3 or result < 0 %}
+            <img src="/static/stop-stop-it.gif" class="img-fluid my-4" alt="Warning">
+            {% endif %}
+            <footer class="text-muted">
+                The prices reflect the phone market in the year 2018.
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
